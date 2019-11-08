@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/pop_item_width"
+    android:layout_height="@dimen/pop_item_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_pvr_pop"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/pop_item_icon_magin_with"
+        android:layout_height="@dimen/pop_item_icon_magin_with"
+        android:layout_marginStart="@dimen/pop_item_icon_magin_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:duplicateParentState="true"
+        android:paddingStart="@dimen/pop_item_txt_padding_start"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/pop_item_txt_sp"
+        android:textColor="@color/selector_white_black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

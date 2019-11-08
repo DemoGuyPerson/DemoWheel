@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">LauncherH</string>
+    <string name="error_devices_msg"> Dedicated Launcher for Hathway Hybrid Box, Pleass Un-Install it if you are not Using it</string>
+    <string name="hathway_dvb_title">TV</string>
+    <string name="hathway_jio_title">JIO</string>
+    <string name="hathway_prime_title">PRIME</string>
+    <string name="string_gracenote_recommend_1">Top Movie for Month -- %1$s</string>
+    <string name="hathway_title_home">Home</string>
+    <string name="hathway_title_hathway">Hathway</string>
+    <string name="hathway_title_myapp">My Apps</string>
+    <string name="string_gracenote_recommend_english">Top Movie for Month -- English</string>
+    <string name="string_gracenote_recommend_hindi">Top Movie for Month -- Hindi</string>
+    <string name="string_gracenote_des">Recommend TV shows and movies</string>
+    <string name="home_select_app_txt">Select App</string>
+    <string name="channel_add_btn">Add OTT Channels</string>
+    <string name="channel_add_info">Add and remove channels from your Home screen</string>
+    <string name="custom_channel_switch">></string>
+    <string name="channel_is_null">Channel is empty</string>
+    <string name="custom_channel_recycler_title">Home screen channels</string>
+    <string name="custom_channel_recycler_details">Select which channels appear on the Home screen.\nEmpty channels will not be shown.</string>
+
+    <string name="app_opera_open">Open</string>
+    <string name="app_opera_info">Info</string>
+    <string name="app_opera_uninstall">Uninstall</string>
+    <string name="app_opera_move">Move</string>
+    <string name="channel_opera_add_playNext">Add to Play Next</string>
+    <string name="channel_opera_remove">Remove</string>
+    <string name="play_next_opera_remove">Remove from Play Next</string>
+
+    <string name="apps_title">Apps</string>
+    <string name="apps_game_title">Games</string>
+
+    <string name="apps_get_more_app">Get more apps</string>
+    <string name="apps_get_more_game">Get more games</string>
+
+</resources>

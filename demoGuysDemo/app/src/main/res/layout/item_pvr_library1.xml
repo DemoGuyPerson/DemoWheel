@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/selector_pvr_pop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            tools:src="@drawable/ic_addplaynext_0" />
+
+        <com.nes.customgooglelauncher.ui.widget.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/selector_white_black"
+            tools:text="@string/app_opera_remove_fav" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

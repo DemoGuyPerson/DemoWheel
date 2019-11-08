@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:configApp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/custom_item_height"
+    android:addStatesFromChildren="true"
+    android:focusable="true"
+    android:descendantFocusability="afterDescendants"
+    android:background="@drawable/selector_channel_bg">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/home_app_select_img_width"
+        android:layout_height="@dimen/home_app_select_img_height"
+        android:layout_marginStart="@dimen/home_app_select_txt_padding"
+        android:layout_marginTop="@dimen/custom_item_top_magin"
+        android:scaleType="centerCrop"
+        configApp:layout_constrainedHeight="true"
+        configApp:layout_constraintStart_toStartOf="parent"
+        configApp:layout_constraintTop_toTopOf="parent" />
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/custom_item_top_magin"
+        android:textColor="@color/home_app_selector_item_txt_color"
+        android:textSize="@dimen/sp_16"
+        configApp:layout_constraintLeft_toRightOf="@+id/logo"
+        configApp:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/custom_channel_item_alia_color"
+        android:textSize="@dimen/custom_channel_alia_txt_sp"
+        configApp:layout_constraintStart_toStartOf="@+id/tv_name"
+        configApp:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+
+    <Switch
+        android:id="@+id/mSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/custom_item_top_magin"
+        configApp:layout_constraintEnd_toEndOf="parent"
+        configApp:layout_constraintTop_toTopOf="@+id/logo"
+        configApp:layout_constraintBottom_toBottomOf="@+id/logo"/>
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_channel_mask_color"
+        android:visibility="gone"
+        configApp:layout_constraintLeft_toLeftOf="parent"
+        configApp:layout_constraintRight_toRightOf="parent"
+        configApp:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

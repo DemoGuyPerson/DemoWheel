@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332335501250",
+    "firebase_url": "https://sei111h.firebaseio.com",
+    "project_id": "sei111h",
+    "storage_bucket": "sei111h.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332335501250:android:7300b3896cc21724",
+        "android_client_info": {
+          "package_name": "com.nes.customgooglelauncher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332335501250-diripvebhaqglpci4icfi829k4b34e5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlJXwYgDpJFi1kOv0H-Pof_JVhcZ2sDA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332335501250-diripvebhaqglpci4icfi829k4b34e5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

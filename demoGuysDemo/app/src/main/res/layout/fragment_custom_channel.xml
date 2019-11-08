@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/home_app_selector_txt_color"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/home_app_select_txt_padding"
+        android:paddingStart="@dimen/home_app_select_txt_padding"
+        android:text="@string/home_select_app_txt"
+        android:textColor="@color/gray_color"
+        android:textSize="@dimen/home_select_txt_sp" />
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/rcy_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_app_selector_recycler_color"
+        />
+</LinearLayout>

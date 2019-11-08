@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingTop="45dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    tools:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/ll_app"
+        android:layout_width="228dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_getmore_apps" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Get more apps"
+            android:textColor="@color/lb_tv_white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_game"
+        android:layout_width="228dp"
+        android:layout_height="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_getmore_games"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Get more games"
+            android:textColor="@color/lb_tv_white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

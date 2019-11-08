@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/home_detail_title_max_width"
+        android:layout_height="wrap_content"
+        android:text="Redivider"
+        android:textStyle="bold"
+        android:textColor="@color/home_detail_name_color"
+        android:textSize="@dimen/home_detail_name_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxEms="30"
+        app:myTypeface="ROBOTO_LIGHT"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <ImageView
+        android:id="@+id/img_type"
+        android:layout_width="@dimen/home_detail_type_image_width"
+        android:layout_height="@dimen/home_detail_type_image_height"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:layout_marginTop="@dimen/home_detail_magin_top2"
+        />
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_fraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/img_type"
+        app:layout_constraintStart_toEndOf="@id/img_type"
+        app:layout_constraintTop_toTopOf="@+id/img_type"
+        android:layout_marginStart="@dimen/home_detail_magin_txt"
+        android:text="6.8/10"
+        app:myTypeface="ROBOTO_LIGHT"
+        android:textSize="@dimen/home_other_sp"
+        android:textColor="@color/home_other_txt_color"
+        />
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fraction"
+        app:layout_constraintStart_toEndOf="@id/tv_fraction"
+        app:layout_constraintTop_toTopOf="@+id/tv_fraction"
+        android:layout_marginStart="@dimen/home_detail_magin_txt"
+        android:text="1 hr 52 min"
+        app:myTypeface="ROBOTO_LIGHT"
+        android:textSize="@dimen/home_other_sp"
+        android:textColor="@color/home_other_txt_color"
+        />
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_year1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+        app:layout_constraintStart_toEndOf="@id/tv_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        android:layout_marginStart="@dimen/home_detail_magin_txt"
+        android:text="2018"
+        app:myTypeface="ROBOTO_LIGHT"
+        android:textSize="@dimen/home_other_sp"
+        android:textColor="@color/home_other_txt_color"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="@dimen/home_detail_rading_bar_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_detail_magin_top1"
+        android:isIndicator="false"
+        style="@style/RatingBar_CustomColor"
+        android:numStars="@integer/home_details_ratingbar_num"
+        android:rating="@integer/home_details_ratingbar_rating"
+        android:stepSize="@integer/home_details_ratingbar_stepSize"
+        android:focusable="false"
+        app:layout_constraintStart_toEndOf="@id/tv_year1"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:layout_marginStart="@dimen/home_detail_magin_txt"/>
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_year"
+        android:layout_width="@dimen/home_detail_title_year1_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/defult_magin"
+        android:text="(2219)"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/img_type"
+        app:layout_constraintStart_toEndOf="@id/ratingBar"
+        app:layout_constraintTop_toTopOf="@+id/img_type"
+        android:textSize="@dimen/home_other_sp"
+        app:myTypeface="ROBOTO_LIGHT"
+        android:textColor="@color/home_other_txt_color"/>
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tv_year"
+        android:text="Harry Potter is a series of fantasy novels written by British suthor J.K.Rowling"
+        android:textSize="@dimen/home_other_sp"
+        app:myTypeface="ROBOTO_LIGHT"
+        android:textColor="@color/home_other_txt_color"
+        android:maxLines="@integer/home_details_txt_line"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/home_detail_magin_top1"
+        />
+
+</merge>

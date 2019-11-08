@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/home_foot_height"
+    android:paddingStart="@dimen/home_out_padding_start"
+    android:paddingBottom="@dimen/home_foot_height"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="@color/home_bg_color">
+
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/btn_ctm_channel"
+        android:layout_width="@dimen/home_foot_width"
+        android:layout_height="@dimen/home_foot_btn_height"
+        android:gravity="center"
+        android:focusable="true"
+        android:text="@string/channel_add_btn"
+        android:textColor="@android:color/white"
+        android:nextFocusRight="@+id/btn_ctm_channel"
+        android:background="@drawable/selector_button_customer_channel"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:text="@string/channel_add_info"
+        android:layout_below="@id/btn_ctm_channel"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

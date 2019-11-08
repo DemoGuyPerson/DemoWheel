@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/home_bg_top_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/home_img_bg_top"/>
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/home_round_img_width"
+        android:layout_height="@dimen/home_round_img_height"
+        android:layout_marginStart="@dimen/home_out_padding_start"
+        android:layout_marginTop="@dimen/home_out_padding_top"
+        android:focusable="true"
+        android:layout_marginEnd="@dimen/home_out_padding_start"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/selector_icon_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/home_round_img_padding"
+        android:src="@mipmap/ic_launcher"/>
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/id_title_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/home_title_txt_style"
+        app:layout_constraintStart_toEndOf="@id/img_icon"
+        android:text="@string/hathway_title_home"/>
+
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/id_title_myapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/id_title_home"
+        android:text="@string/hathway_title_myapp"
+        style="@style/home_title_txt_style"
+        />
+
+    <ImageView
+        android:id="@+id/id_img_assistant"
+        android:layout_width="@dimen/home_round_img_width"
+        android:layout_height="@dimen/home_round_img_height"
+        android:layout_marginStart="@dimen/home_title_magin_start"
+        android:padding="@dimen/home_round_img_padding"
+        android:src="@drawable/selector_assistant"
+        app:layout_constraintTop_toTopOf="@id/id_title_myapp"
+        app:layout_constraintBottom_toBottomOf="@id/id_title_myapp"
+        app:layout_constraintStart_toEndOf="@id/id_title_myapp"
+        android:focusable="true"
+        android:background="@drawable/selector_icon_bg"
+        />
+
+    <ImageView
+        android:id="@+id/img_setting"
+        android:layout_width="@dimen/home_round_img_width"
+        android:layout_height="@dimen/home_round_img_width"
+        android:layout_marginEnd="@dimen/home_out_padding_start"
+        app:layout_constraintTop_toTopOf="@id/img_icon"
+        app:layout_constraintBottom_toBottomOf="@id/img_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/selector_settings" />
+
+    <ImageView
+        android:id="@+id/img_wifi"
+        android:layout_width="@dimen/home_round_img_width"
+        android:layout_height="@dimen/home_round_img_width"
+        android:layout_marginEnd="@dimen/home_out_padding_start"
+        app:layout_constraintTop_toTopOf="@id/img_setting"
+        app:layout_constraintBottom_toBottomOf="@id/img_setting"
+        app:layout_constraintEnd_toStartOf="@id/img_setting"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/status_bar_wifi" />
+    <com.nes.customgooglelauncher.ui.widget.CustomTextView
+        android:id="@+id/tv_notify"
+        android:layout_width="@dimen/home_round_img_width"
+        android:layout_height="@dimen/home_round_img_width"
+        app:layout_constraintTop_toTopOf="@id/img_setting"
+        app:layout_constraintBottom_toBottomOf="@id/img_setting"
+        app:layout_constraintEnd_toStartOf="@id/img_wifi"
+        android:layout_marginEnd="@dimen/home_out_padding_start"
+        android:background="@drawable/selector_home_notify"
+        android:textColor="@color/selector_home_notify_txt_color"
+        android:text="0"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="img_icon,id_title_home,id_title_hathway,id_title_myapp,id_img_assistant,img_setting,img_wifi,tv_notify"/>
+</merge>

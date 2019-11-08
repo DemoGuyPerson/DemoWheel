@@ -1,0 +1,43 @@
+<resources >
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--自定义RatingBar Color-->
+    <style name="RatingBar_CustomColor" parent="Base.Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_star</item>
+        <item name="android:maxHeight">@dimen/home_detail_ratingbar_height</item>
+        <item name="android:minHeight">@dimen/home_detail_ratingbar_height</item>
+    </style>
+
+    <style name="home_title_txt_style">
+        <item name="android:textColor">@color/selector_home_txt_color</item>
+        <item name="android:layout_marginStart">@dimen/home_title_magin_start</item>
+        <item name="android:textSize">@dimen/home_title_txt_sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintTop_toTopOf">@id/img_icon</item>
+        <item name="layout_constraintBottom_toBottomOf">@id/img_icon</item>
+        <item name="myTypeface">ROBOTO_LIGHT</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.Leanback">
+        <item name="android:windowBackground">@color/bg_setting_window</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="PopStyle">
+        <item name="android:windowEnterAnimation">@anim/alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/alpha_out</item>
+    </style>
+
+    <style name="style_progressbar" parent="@style/Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/probar_gray_bule</item>
+    </style>
+</resources>

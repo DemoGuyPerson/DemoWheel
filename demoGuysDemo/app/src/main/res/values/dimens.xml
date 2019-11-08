@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defult_magin">7dp</dimen>
+
+    <dimen name="home_out_padding_start">35dp</dimen>
+    <dimen name="home_out_padding_top">10dp</dimen>
+    <dimen name="home_bg_top_height">70dp</dimen>
+    <dimen name="home_round_img_width">35dp</dimen>
+    <dimen name="home_round_img_height">35dp</dimen>
+    <dimen name="home_round_img_padding">7dp</dimen>
+    <dimen name="home_title_magin_start">25dp</dimen>
+    <dimen name="home_bottom_height">140dp</dimen>
+
+    <dimen name="home_big_image_height1">220dp</dimen>
+    <dimen name="home_big_barrier_magin_top">170dp</dimen>
+    <dimen name="home_big_image_height">300dp</dimen>
+    <dimen name="home_detail_height">145dp</dimen>
+    <dimen name="home_detail_magin_top">85dp</dimen>
+    <dimen name="home_detail_rading_bar_width">80dp</dimen>
+    <dimen name="home_detail_magin_top1">15dp</dimen>
+    <dimen name="home_detail_magin_top2">10dp</dimen>
+    <dimen name="home_detail_magin_txt">15dp</dimen>
+    <dimen name="home_detail_type_image_width">45dp</dimen>
+    <dimen name="home_detail_type_image_height">24dp</dimen>
+    <dimen name="home_detail_ratingbar_height">16dp</dimen>
+    <dimen name="home_detail_title_max_width">300dp</dimen>
+    <dimen name="home_detail_title_year1_width">50dp</dimen>
+
+    <dimen name="home_recycler_pading_top">20dp</dimen>
+    
+    <dimen name="home_item_recycler_padding_bottom">20dp</dimen>
+    <dimen name="home_item_item_magin">2dp</dimen>
+    <dimen name="home_item_item_magin1">15dp</dimen>
+    <dimen name="home_item_title_magin_bottom">5dp</dimen>
+    <dimen name="home_item_item_image_padding">2dp</dimen>
+    <dimen name="home_item_right_width">20dp</dimen>
+    <dimen name="home_item_item_image_padding1">1dp</dimen>
+    <dimen name="home_item_item_tvname_magin_top">5dp</dimen>
+    <dimen name="home_item_item_progressbar_height">4dp</dimen>
+    <dimen name="home_item_item_progressbar_magin">6dp</dimen>
+
+    <dimen name="home_item_item_type1_width">162dp</dimen>
+    <dimen name="home_item_item_type1_height">86dp</dimen>
+
+    <dimen name="home_item_item_type2_width">110dp</dimen>
+    <dimen name="home_item_item_type2_height">63dp</dimen>
+
+    <dimen name="home_item_item_type3_width">210dp</dimen>
+    <dimen name="home_item_item_type3_height">113dp</dimen>
+
+    <dimen name="home_item_item_type4_width">130dp</dimen>
+    <dimen name="home_item_item_type4_height">74dp</dimen>
+
+    <item name="hathway_lb_focus_zoom_factor_large" type="fraction">118%</item>
+    <item name="hathway_lb_focus_zoom_factor_medium" type="fraction">114%</item>
+    <item name="hathway_lb_focus_zoom_factor_small" type="fraction">110%</item>
+    <item name="hathway_lb_focus_zoom_factor_xsmall" type="fraction">106%</item>
+
+    <dimen name="home_item_item_image_rate">2dp</dimen>
+
+    <dimen name="home_app_select_txt_padding">20dp</dimen>
+
+    <dimen name="home_app_select_item_height">71dp</dimen>
+    <dimen name="home_app_select_img_width">64dp</dimen>
+    <dimen name="home_app_select_img_height">36dp</dimen>
+
+    <dimen name="home_foot_width">200dp</dimen>
+    <dimen name="home_foot_height">40dp</dimen>
+    <dimen name="home_foot_btn_height">50dp</dimen>
+
+    <dimen name="custom_item_height">59dp</dimen>
+    <dimen name="custom_item_top_magin">10dp</dimen>
+    <dimen name="custom_item_top_magin1">8dp</dimen>
+
+    <dimen name="pop_item_width">180dp</dimen>
+    <dimen name="pop_item_height">44dp</dimen>
+    <dimen name="pop_item_icon_magin_with">20dp</dimen>
+    <dimen name="pop_item_icon_magin_start">15dp</dimen>
+    <dimen name="pop_item_txt_padding_start">10dp</dimen>
+
+
+    <dimen name="apps_magin_top">80dp</dimen>
+    <dimen name="apps_recycler_header_padding">20dp</dimen>
+    <dimen name="apps_recycler_header_height">150dp</dimen>
+    <dimen name="apps_recycler_header_item_width">170dp</dimen>
+    <dimen name="apps_recycler_header_item_height">45dp</dimen>
+    <dimen name="apps_recycler_header_magin_end">15dp</dimen>
+    <dimen name="apps_recycler_header_magin_start">200dp</dimen>
+    <dimen name="apps_recycler_item_magin">10dp</dimen>
+
+
+
+    <dimen name="item_width">80dp</dimen>
+    <dimen name="item_width_min">20dp</dimen>
+    <dimen name="item_width_line">1dp</dimen>
+
+    <dimen name="home_defult_padding_left">-85dp</dimen>
+    <dimen name="home_app_padding_left">-110dp</dimen>
+    <dimen name="home_other_padding_left">-170dp</dimen>
+
+</resources>

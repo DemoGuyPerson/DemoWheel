@@ -1,0 +1,118 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('D:/atv_keystore/debug_new.keystore')
+            storePassword 'android'
+        }
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('D:/atv_keystore/debug_new.keystore')
+            storePassword 'android'
+        }
+        androidtv {
+//            File strFile = new File("D:\\Android\\test_jar\\debug_androidtvnew.keystore")
+            /*File strFile = new File("D:\\debugkey\\tv_platform_debug_new.keystore")*/
+            storeFile file('D:/atv_keystore/debug_new.keystore')
+            /*  storeFile file(strFile)*/
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.nes.customlauncher.public"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    // Specifies one flavor dimension.
+    flavorDimensions "channel"
+    productFlavors {
+        common {
+            dimension "channel"
+            buildConfigField "String", "CUSTOMERNAME", "\"common\""
+        }
+
+        public_test {
+            dimension "channel"
+            buildConfigField "String", "CUSTOMERNAME", "\"hathway\""
+            signingConfig signingConfigs.androidtv
+        }
+    }
+
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.equals("release")) {
+            def newName = ""
+            if (variant.productFlavors[0].name.equals("hathway")) {
+                newName = "Launcher_Public_v${defaultConfig.versionName}.apk"
+            } else {
+                newName = "Launcher_Public"
+                variant.productFlavors.each { product ->
+                    newName = "${newName}_${product.name}"
+                }
+                newName = "${newName}_v${defaultConfig.versionName}.apk"
+            }
+            variant.outputs.all { output ->
+                outputFileName = newName;
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+//    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+//    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.tvprovider:tvprovider:1.0.0'
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    compileOnly files('libs/nes_frameworks_2018_07_23.jar')
+    compileOnly files('libs/framework.jar')
+    implementation project(path: ':base')
+    implementation project(path: ':utilslib')
+    implementation project(path: ':imageloader')
+
+    implementation 'com.google.firebase:firebase-core:17.1.0'
+
+    // Add dependency
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-alpha-2'
+
+}
